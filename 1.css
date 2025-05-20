@@ -1,0 +1,178 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+#imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+
+.card-proyect-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.fin{
+    font-size: 18px;
+    color: #555;
+}
+p{
+    font-size: 28px;
+    color: #a7a7a7;
+}
+
+.profile-card{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.container-footer{
+margin-right: 10%;
+}
+.proyect-card{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center; 
+}
+.hability-card{ 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center; 
+    padding-top: 10px;
+    margin-top: 2%;
+}
+footer {
+    background-color: #333;
+    color: #f7f1f1;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container1 h1{
+    margin-left: 250px;
+}
+.container1 .menu{
+    margin-right: 100px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.proyect-card h1{
+    left: 38%;
+    margin-top: 1%;
+}
+.menu ul li {
+    margin: 0 15px;
+}
+
+.text{
+    float: left;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #000000;
+}
+.cami>img{
+    width: 200px;
+    border-radius: 15px ;
+    transition: all 300ms;
+
+}
+.cami>img:hover{
+    transform: scale(1.1);
+}
+.container-card-proyecto{
+
+    background-color: #000000;
+    margin-top: 8%;
+    float: left;
+    align-items: center;
+    border-radius: 10%;
+ 
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-right: 10%;
+        font-size: 40px;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        background: linear-gradient(to right , #262525, #888785);
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}

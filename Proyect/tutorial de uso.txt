@@ -1,0 +1,3 @@
+Profe,si la pagina1 al abrirla no le funciona el css, tiene que abrirlo desde visual descargaando la extencion:"Live Server"(tiene color violeta y es la primera generalmente)
+xon eso haces click derecho en el codigo html y tocas la opcion "open with Live Server",y ahi le deberia de andar, si no le anda f, espero que le guste la pagina web, es una apgina de venta online de ropa
+con mucho cariño ty deedicacion la hemos echo nosotros mismos: Luka Martirena , Franco Juani y Camilo Gomez

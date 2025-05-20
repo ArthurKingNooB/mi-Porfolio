@@ -1,0 +1,20 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+#poleras{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: 5%;
+    grid-gap: 30px;
+
+}
+#poleras figure{
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+#poleras figure:hover{
+    transform: scale(1.15);
+}

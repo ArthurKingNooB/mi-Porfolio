@@ -1,0 +1,148 @@
+body{
+    overflow: hidden;
+    background-color: rgb(36, 34, 34);
+    font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+     min-width: 100%;
+     min-height: 100vh;
+    }
+
+#ctn-ig{
+transform: translate(20%,0%);
+cursor: pointer;
+
+}
+#ctn-talles{
+    transform: translate(40%,0%);
+    
+    }
+.titu{
+    transform: translate(0%,-20%);
+}
+
+#ctn-div{
+    transform: translate(-20%,-460%);
+    }
+
+#ctn-header{
+    transform: translate(130%,-460%);
+    margin: auto;
+    width: 43.75rem;
+    font-family: 'Prompt', sans-serif;
+
+}
+#ctn-correoElectronico{
+    transform: translate(-120%,-210%);
+    margin: auto;
+    width: 31.25rem;
+    font-family: 'Prompt', sans-serif;
+
+}
+#ctn-header2{
+    transform: translate(-100%,-320%);
+    margin: auto;
+        width:18.75rem;
+
+    font-family: 'Prompt', sans-serif;
+
+}
+
+ul, ol{
+    list-style: none;
+
+}
+.nav li a{
+    background-color: rgb(18, 18, 18);
+    color: blueviolet;
+    text-decoration: none;
+    padding: 0.625rem 0.9375rem;
+    display: block;
+ transition: all 300ms;
+ border-radius: 15px;
+
+}
+
+.nav >li{
+    float: left;
+}
+.nav li a:hover{
+    background-color: #71278a86;
+   
+    color: white;
+}
+.nav li ul{
+    display:none ;
+    position: absolute;
+    min-width: 8.75rem;
+}
+
+.nav li:hover > ul {
+    display: block;
+
+}
+.nav li ul li {
+    position: relative;
+
+}
+.nav li ul li ul{
+    right: -8.75rem;
+    top: 0rem;
+}
+@media(max-width:1200px){
+    #ctn-header{
+        transform: translate(120%,0%);   
+       }
+       #ctn-header2{
+           transform: translate(-40%);
+       }
+       #ctn-correoElectronico{
+        font-size: 20px;
+        transform: translate(-50%,0%);
+            }
+            #ctn-ig{
+                transform: translate(40%);
+            }
+}
+@media(max-width:992px){
+    
+     
+    #ctn-icon-search{
+        transform: translate(0%,0%);
+    }
+    #ctn-header{ 
+   
+     transform: translate(100%,0%);   
+    }
+    #ctn-header2{
+          transform: translate(0%);
+        
+    }
+    #ctn-correoElectronico{
+        font-size: 20x;
+        transform: translate(-35%,0%);
+    }        
+    #ctn-ig{
+
+        transform: translate(50%,0%);
+
+    }
+}
+@media(max-width:768px){
+    #ctn-header{
+        transform: translate(90%,0%);   
+       }
+       #ctn-icon-search{
+          margin-left: 200px;
+       }
+       #ctn-correoElectronico{
+           font-size: 15px;
+           transform: translate(-20%,0%);
+       }        
+    
+}
+@media(max-width:576px){
+  
+}

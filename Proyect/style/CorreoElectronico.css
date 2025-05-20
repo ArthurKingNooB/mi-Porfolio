@@ -1,0 +1,252 @@
+
+body{
+    overflow: hidden;
+    background-color: rgb(36, 34, 34);
+    font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+     min-width: 100%;
+     min-height: 100vh;
+    }
+
+
+
+.main2{
+    background-color:rgb(36, 34, 34);
+    color: blueviolet;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    flex-grow: 1;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    width: 107.5rem;
+    padding: 15.625rem;
+    transform: translate(-50%,-50%);
+    background: rgb(18, 18, 18);
+    box-shadow: 0 15px 25pc blueviolet;
+    border-radius: 10px;
+
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25rem;
+    
+    background:rgb(18, 18, 18);
+    box-shadow: 0 15px 25pc blueviolet;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 1.25rem 0 ;
+    border-bottom: 1px solid blueviolet;
+}
+.formulario form{
+    padding: 0 2.5rem;
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad ;
+    margin: 1.875rem 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    transition: .5s;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.username samp::before{
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: hotpink;
+
+
+}
+
+
+.username input:focus ~ label, .username input:valid ~ label{
+    top: -0.3125rem;
+    color: #8a2be2;
+
+}
+.username input:focus~span::before,.username input:valid~span::before{
+    width: 100%;
+}
+.recordar{
+    margin: -0.3125rem 0 1.25rem 0.3125rem;
+    color: blue;
+    cursor: pointer;
+}
+.recordar:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 3.125rem;
+    border: 0.0625rem solid;
+    background: blueviolet;
+    border-radius: 1.25rem;
+    font-size: 1.125rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type="submit"]:hover{
+    border-color: blueviolet ;
+    transition: .5s;
+
+}
+
+.registrarse{
+    margin: 1.875rem 0;
+    text-align: center;
+    font-size: 1rem;
+color: blueviolet
+
+
+
+}
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+.registrarse a:hover{
+    text-decoration: underline;
+}
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #adadad ;
+    margin: 30px 0;
+}
+.contraseña input{
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.contraseña samp::before{
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: hotpink;
+
+
+}
+.contraseña input:focus ~ label, .contraseña input:valid ~ label{
+    top: -0.3125rem;
+    color: blueviolet;
+
+}
+.contraseña input:focus~span::before,.contraseña input:valid~span::before{
+    width: 100%;
+}
+main{
+  
+    top: 55%;
+    left: 50%;
+    width: 107.5rem;
+    padding: 12.5rem;
+}
+
+form .mail{
+    position: relative;
+    border-bottom: 0.125rem solid #adadad ;
+    margin: 1.875rem 0;
+}
+.mail input{
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    transition: .5s;
+}
+.mail label{
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.mail samp::before{
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: hotpink;
+    transition: .5s;
+
+}
+
+.mail input:focus ~ label, .mail input:valid ~ label{
+    top: -0.3125rem;
+    color: blueviolet;
+
+}
+.mail input:focus~span::before,.mail input:valid~span::before{
+    width: 100%;
+}
+@media(max-width:1200px){
+ 
+}
+@media(max-width:992px){
+
+}
+@media(max-width:768px){
+ 
+}
+@media(max-width:576px){
+  
+}

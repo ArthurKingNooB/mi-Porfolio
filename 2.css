@@ -1,0 +1,417 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    bottom: 0;
+    color: #f7f1f1;
+    padding: 2% 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a7a7a7;
+    font-size: 28px;
+}
+
+.fin {
+    color: #555;
+    font-size: 18px;
+}
+/* Historial */
+.card-historial {
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: left;
+}
+
+.titulo-historial {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f7f1f1;
+}
+
+.lista-historial {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.lista-historial li {
+    margin-bottom: 25px;
+}
+
+.lista-historial h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.lista-historial span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.lista-historial ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ddd;
+}
+
+.lista-historial ul li {
+    margin-bottom: 6px;
+}
+/* Imagenes */
+
+#imagen {
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+
+.card-proyect-img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+
+.cami > img {
+    border-radius: 15px;
+    transition: all 300ms;
+    width: 200px;
+}
+
+.cami > img:hover {
+    transform: scale(1.1);
+}
+
+/* Containers*/
+
+.container1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1 h1 {
+    margin-left: 250px;
+}
+
+.container1 .menu {
+    margin-right: 100px;
+}
+
+
+
+.container-card-proyecto {
+    align-items: center;
+    background-color: #000000;
+    border-radius: 10%;
+    float: left;
+    margin-top: 8%;
+}
+
+/* Menú */
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #000000;
+}
+
+/* Cartas (divs) */
+
+.profile-card,
+.proyect-card,
+.hability-card,
+.contacto-card{
+    background-color: #333;
+    border-radius: 20px;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.proyect-card {
+    display: flex;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.hability-card {
+    margin-top: 2%;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border-radius: 20px;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.proyect-card h1 {
+    left: 38%;
+    margin-top: 1%;
+}
+
+/* Otros */
+.formulario1{
+    padding: 0% 50% 50% 0%;
+}
+.btn-enviar{
+    margin-bottom: 5%;
+}
+.text {
+    float: left;
+    position: relative;
+}
+.btn{
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: color 0.3s, background-color 0.3s;
+
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.hability-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#btn-1{
+ position: relative;
+ margin-left: 32%;
+ width: 25rem;
+translate: translate(-50%,-50%);
+}
+/* Formulario */
+
+
+.formulario{
+    position: relative;
+    margin-left: 38%;
+    width: 25rem; 
+    background:rgb(18, 18, 18);
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 1 rem 0 1.35rem 0 ;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #f7f1f1;
+}
+.formulario form{
+    padding: 0 2.5rem;
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+    border-bottom: 2px solid #adadad ;
+    margin: 1.875rem 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+    transition: .5s;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.username samp::before{
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: hotpink;
+
+
+}
+
+
+.username input:focus ~ label, .username input:valid ~ label{
+    top: -0.3125rem;
+    color: #ffffff;
+
+}
+.username input:focus~span::before,.username input:valid~span::before{
+    width: 100%;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 3.125rem;
+    border: 0.0625rem solid;
+    background: #333;
+    border-radius: 1.25rem;
+    font-size: 1.125rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type="submit"]:hover{
+    border-color: white ;
+    background: #000000;
+    color: white;
+    transition: .5s;
+
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #adadad ;
+    margin: 30px 0;
+}
+.contraseña input{
+    width: 100%;
+    padding: 0 0.3125rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+.contraseña samp::before{
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background: hotpink;
+
+
+}
+.contraseña input:focus ~ label, .contraseña input:valid ~ label{
+    top: -0.3125rem;
+    color: white;
+
+}
+.contraseña input:focus~span::before,.contraseña input:valid~span::before{
+    width: 100%;
+}
+#footer-contacto{
+  padding-top: 10%;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 40px;
+        margin-right: 10%;
+    }
+
+    .menu {
+        background: linear-gradient(to right, #262525, #888785);
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
