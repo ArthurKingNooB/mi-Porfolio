@@ -1,178 +1,196 @@
+/* Reset básico y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 1rem;
 }
+
+/* Encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #2e2e2e;
 }
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #00ffcc;
+}
+
+header p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Secciones */
 section {
-    padding: 40px;
-    text-align: center;
-}
-#imagen {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 8px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-
-.card-proyect-img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-.fin{
-    font-size: 18px;
-    color: #555;
-}
-p{
-    font-size: 28px;
-    color: #a7a7a7;
+h2 {
+  font-size: 1.5rem;
+  color: #00ffd5;
+  border-bottom: 1px solid #2e2e2e;
+  margin-bottom: 1rem;
 }
 
-.profile-card{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    border-radius: 20px;
+.proyecto {
+  margin-bottom: 2rem;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+  transition: transform 0.3s;
+}
 
+.proyecto:hover {
+  transform: scale(1.02);
 }
-.container-footer{
-margin-right: 10%;
+
+/* Imagenes centradas y animadas */
+figure {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
-.proyect-card{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-self: center; 
+
+figure img {
+  max-width: 220px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-.hability-card{ 
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-self: center; 
-    padding-top: 10px;
-    margin-top: 2%;
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 204, 0.5);
 }
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #f7f1f1;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-.container1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.container1 h1{
-    margin-left: 250px;
-}
-.container1 .menu{
-    margin-right: 100px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-top: 2px solid #2e2e2e;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
 }
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #25d366, #1ebe57);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.5);
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+  user-select: none;
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
+.whatsapp-btn i {
+  margin-right: 0.8rem;
+  font-size: 1.6rem;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+.whatsapp-btn:hover {
+  background: linear-gradient(135deg, #20c05a, #1a9c4d);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.8);
+  transform: scale(1.05);
 }
-.proyect-card h1{
-    left: 38%;
-    margin-top: 1%;
-}
-.menu ul li {
-    margin: 0 15px;
-}
-
-.text{
-    float: left;
-    position: relative;
-}
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
+.datos-personales {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  max-width: 600px;
 }
 
-.menu ul li a:hover {
-    color: #000000;
+.datos-personales li {
+  margin-bottom: 0.7rem;
+  border-left: 3px solid #25d366;
+  padding-left: 12px;
+  transition: background-color 0.3s ease;
+  cursor: default;
 }
-.cami>img{
-    width: 200px;
-    border-radius: 15px ;
-    transition: all 300ms;
 
+.datos-personales li:hover {
+  background-color: rgba(37, 211, 102, 0.1);
 }
-.cami>img:hover{
-    transform: scale(1.1);
+
+
+
+
+
+
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
-.container-card-proyecto{
 
-    background-color: #000000;
-    margin-top: 8%;
-    float: left;
-    align-items: center;
-    border-radius: 10%;
- 
+.habilidad {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eee;
+  border: 1px solid #25d366;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: default;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  justify-content: center;
 }
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        margin-right: 10%;
-        font-size: 40px;
-    }
 
-    .menu {
-        display: none;
-        width: 100%;
-        background: linear-gradient(to right , #262525, #888785);
-        position: absolute;
-        top: 100px;
-        left: 0;
-    }
+.habilidad i {
+  font-size: 1.3rem;
+  color: #25d366;
+}
 
-    .menu.active {
-        display: flex;
-    }
+.habilidad:hover {
+  background: rgba(37, 211, 102, 0.15);
+  transform: scale(1.08);
+}
+
+.habilidad .estrellas {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  color: gold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Mostrar estrellas al hacer hover */
+.habilidad:hover .estrellas {
+  opacity: 1;
 }

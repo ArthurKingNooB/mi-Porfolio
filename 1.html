@@ -1,134 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>porfolio</title>
-    
-    <link rel="stylesheet" href="2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camilo Amado | Porfolio</title>
+  <link rel="stylesheet" href="1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
 </head>
 <body>
-    <header>
-        <div class="container1">
-            <h1>Mi Perfil</h1>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="1.html">Inicio</a></li>
-                    <li><a href="Experiencia.html">Experiencia</a></li>
+  <header>
+    <h1>Camilo Amado Gomez Airossian</h1>
+    <p>Programador Junior | Fullstack en formación - Maldonado, Uruguay</p>
+  </header>
+
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Soy programador junior enfocado en el desarrollo web. Acabo de terminar mis estudios iniciales y actualmente estoy cursando la carrera Fullstack en Coderhouse. Me gusta crear proyectos funcionales, prolijos y con diseño profesional.</p>
+  </section>
+<section>
+  <h2>Datos Personales</h2>
+  <ul class="datos-personales">
+    <li><strong>Fecha de nacimiento:</strong> 14 de enero de 2006</li>
+    <li><strong>Estudios:</strong> Coderhouse (Fullstack), UTU Maldonado (Escuela Técnica Superior de Maldonado, Bachiller Tecnológico en Informática)</li>
+    <li><strong>Intereses:</strong> Me gusta programar y quiero dedicarme profesionalmente al rubro tecnológico</li>
+    <li><strong>Ubicación:</strong> Maldonado, Uruguay</li>
+  </ul>
+</section>
+  <section>
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <h3>Gestión de Torneos de Karate</h3>
+      <p>Aplicación creada como proyecto de egreso. Permite gestionar inscripciones, categorías y resultados de torneos.</p>
+    </div>
+    <div class="proyecto">
+      <h3>Tienda de Ropa</h3>
+      <p>Página web para una tienda de ropa. Diseño visual atractivo y funcionalidad básica de catálogo.</p>
+      <figure>
+        <a href="Proyect/index/pagina1.html" target="_blank">
+          <img src="fon do.png" alt="Logo Tienda de ">
+        </a>
+      </figure>
+    </div>
+    <div class="proyecto">
+      <h3>Landing Page - Catálogo</h3>
+      <p>Landing page donde se pueden hacer pedidos de productos desde un catálogo visual.</p>
+         <figure>
+        <a href="https://mi-tienda-six.vercel.app/" target="_blank">
+          <img src="depositphotos_24751603-stock-photo-shopping-cart-blue-circle-web.jpg" alt="Logo Tienda de ">
+        </a>
+      </figure>
+    </div>
+    <div class="proyecto">
+      <h3>Combinación de Colores</h3>
+      <p>Página práctica para demostrar el uso de HTML y el manejo de combinaciones de colores.</p>
+         <figure>
+        <a href="trabvajo2/index.html" target="_blank">
+          <img src="logo1.png" alt="Logo Tienda de ">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+<section>
+  <h2>Habilidades</h2>
+  <div class="habilidades">
+    <div class="habilidad" data-stars="4"><i class="fab fa-html5"></i> HTML <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="3"><i class="fab fa-css3-alt"></i> CSS <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="1.4"><i class="fab fa-js"></i> JavaScript <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="1"><i class="fab fa-git-alt"></i> Git <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="3.5"><i class="fab fa-github"></i> GitHub <span class="estrellas"></span></div>
+
+    <div class="habilidad" data-stars="4"><i class="fab fa-html5"></i> java <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="3"><i class="fab fa-css3-alt"></i> c# <span class="estrellas"></span></div>
+    <div class="habilidad" data-stars="4"><i class="fab fa-html5"></i> Photoshop <span class="estrellas"></span></div>
+  
+  </div>
+</section>
+
+
+
+
+  <section>
+    <h2>Estudios</h2>
+    <p>Carrera Fullstack en curso - Coderhouse<br>
+    Formación previa en desarrollo web - Proyecto de egreso: app de torneos</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Email: camilo@example.com<br>
+    Teléfono: +598 92 420 997</p>
+     <a class="whatsapp-btn" href="https://wa.me/59892420997" target="_blank" aria-label="Enviar mensaje por WhatsApp">
+    <i class="fab fa-whatsapp"></i> Enviame un mensaje por WhatsApp
+  </a>
+  </section>
+
  
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-
-            <div class="profile-card">
-                <img id="imagen" class="profile-picture" src="cami.jpg" alt="Mi Foto de Perfil">
-                <h1>Camilo Gomez</h1>
-                <p>Soy una persona curiosa y bastante ambiciosa cuando se trata de programación.
-                    Me gusta aprender cosas nuevas todo el tiempo, entender cómo funcionan las
-                    cosas por dentro y buscar formas de mejorar lo que ya existe. Disfruto mucho
-                    de resolver problemas, ya sea escribiendo código o pensando en nuevas ideas.
-                    Aunque todavía tengo mucho por aprender, me esfuerzo siempre por dar lo mejor
-                    de mí en cada proyecto. Me gusta trabajar en equipo, compartir conocimientos
-                    y crecer junto a otras personas que también disfrutan de este mundo de la tecnología.</p>
-
-                <p>Estudie en la escuela tecnica superior de maldonado (utu), teniendo un proyecto final en el lenguaje
-                    c#, este consistia en crear un software de gestion de un torneo de karate, aqui aprendi a 
-                    trabajar en equipo, muy linda experiencia, me gusta mucho la programación y la tecnología.</p>
-            </div>
-            <div class="proyect-card">
-                <h1 class="text">Proyectos Anteriores</h1>
-                <div class="proyect">
-                    <div class="container-card-proyecto" id="item1">
-
-                        <a href="Proyect/index/pagina1.html" target="_blank">
-                            <figure class="cami">
-                                <img class="card-proyect-img" src="fon do.png" alt="proyecto 1">
-                                <h2>AstralCloothes</h2>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="container-card-proyecto">       
-                        <a href="1.html" target="_blank">
-                            <figure class="cami">
-                                <img class="card-proyect-img" src="cami.jpg" alt="proyecto 3">
-                                <h2>Este porfolio</h2>
-                            </figure>
-                        </a>
-                    </div> 
-                
-                    <div class="container-card-proyecto" id="item3">
-                        <a href="trabvajo2/index.html" target="_blank">
-                            <figure class="cami">
-                                <img class="card-proyect-img" src="logo1.png" alt="proyecto 3">
-                                <h2>Animate a Viajar</h2>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hability-card">
-            <h1>Habilidades</h1>
-            <section class="hability-btn">
-                    <button class="btn">css</button>
-                    <button class="btn">html</button>
-                    <button class="btn">javascript</button>
-                    <button class="btn">react</button>
-                    <button class="btn">java</button>
-                    <button class="btn">c#</button>
-                </section>
-            </div>
-        </div>
-        
-        <div class="contacto-card">
-            <div class="blok">
-                <div class="formulario">
-                    <h1>Contacto</h1>
-                    <form class="formulario1" method="post">
-                        <div class="username">
-                            <input type="text" required style="color: #7b7a7a;">
-                            <label > Nombre de usuario</label>
-                            
-                        </div>
-                        <div class="contraseña">
-                            <input type="number" required style="color:#7b7a7a;" >
-                            <label >Telefono</label>
-                        </div>
-                        <div class="contraseña">
-                            <input type="email" required style="color:#7b7a7a;" >
-                            <label >Correo electronico</label>
-                        </div>
-                
-                        <input class="btn-enviar" href="" type="submit" value="Enviar">
-                       
-                        
-                    </form>
-                    </div>
-                    <div >
-                    <h3 >Mi Numero : +598 92 420 997</h3>
-                    <h3 >Mi Gmal : Amadogomez@gmail.com</h3>
-                    <h3 >Mi Mensaje: Muchas gracias por contactarme</h3>
-                    </div>
-                    
-                </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </section>
-    <footer>
-        <div class="container-footer">
-            <p class="fin">Derechos de autor © 2025 Camilo Gomez </p>
-        </div>
-
-    </footer>
-    <script src="1.js"></script>
+  <footer>
+    © 2025 Camilo Amado - Porfolio personal
+  </footer>
+   <script src="1.js"></script>
 </body>
 </html>
